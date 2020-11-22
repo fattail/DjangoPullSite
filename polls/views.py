@@ -12,3 +12,13 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse('欢迎参与投票！')
+
+def detail(request,question_id):
+    return HttpResponse('您正在阅览第%s.' % question_id)
+
+def results(request,question_id):
+    response = '您正在阅览第%s道问题的选项'
+    return HttpResponse(response % question_id)
+
+def vote(request,question_id):
+    return HttpResponse('您正在参与第%s道问题的投票' % question_id)

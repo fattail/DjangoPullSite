@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',# --- 会话框架
     'django.contrib.messages',# --- 消息框架
     'django.contrib.staticfiles',# --- 管理静态文件框架
+    'bootstrap4',
     'polls.apps.PollsConfig',
 ]
 

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',# --- 管理静态文件框架
     'bootstrap4',
     'polls.apps.PollsConfig',
+    'boots.apps.BootsConfig',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,8 @@ ROOT_URLCONF = 'Pull_Site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 os.path.join(BASE_DIR,'boots','templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
